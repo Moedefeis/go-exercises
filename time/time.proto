@@ -1,3 +1,13 @@
 syntax = "proto3";
 package time;
 option go_package = "https://github.com/Moedefeis/go-exercises;time";
+
+service getCurrentTime {
+    rpc getTime (GetTimeRequest) returns (GetTimeReply) {}
+}
+
+message GetTimeRequest {}
+
+message GetTimeReply {
+    string reply = 1;
+}
