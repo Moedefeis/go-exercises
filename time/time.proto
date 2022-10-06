@@ -1,0 +1,3 @@
+syntax = "proto3";
+package time;
+option go_package = "https://github.com/Moedefeis/go-exercises;time";
